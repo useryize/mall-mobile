@@ -3,6 +3,8 @@
         <van-button type="primary" @click="btnTab">主要按钮</van-button>
         <van-popup v-model="isPop">内容</van-popup>
         <van-icon name="chat-o" />
+        <div class="box">
+        </div>
     </div>
 </template>
 
@@ -23,3 +25,7 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+    .box {width: 10rem;height: 10rem;background-color: red;}
+</style>
