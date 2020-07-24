@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <HelloWorld />
+    <router-link to="/aaa">Go to Foo</router-link>
   </div>
+  
 </template>
 
 <script>
