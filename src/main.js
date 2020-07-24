@@ -5,6 +5,7 @@ import App from './App';
 import VueRouter from 'vue-router';
 import { Button, Icon, Popup } from 'vant';
 import Header from './components/pages/Header.vue';
+import './assets/flexible';
 
 Vue.use(Button).use(Icon).use(Popup).use(VueRouter);
 
