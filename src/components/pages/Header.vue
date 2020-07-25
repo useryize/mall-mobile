@@ -1,19 +1,19 @@
 <template>
-    <div class="box">
+    <div class="box"></div>
 
-    </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {};
 </script>
 
 <style scoped>
-    .box {
-        width: 10px;
-        height: 10px;
-        background: red;
-    }
+.headerBox {
+    height: 0.75rem;
+}
+.box{
+    width: .40rem;
+    height: .40rem;
+    background: red;
+}
 </style>

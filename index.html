@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
     <title>mall-mobile</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-  </body>
-  <!-- <script>
-      // rem 适配 
-      let domWidth = document.documentElement.clientWidth || document.body.clientWidth;
-      let domID = document.getElementsByTagName('html')[0];
-      domWidth = domWidth > 750 ? 750 : domWidth;
-      domID.style.fontSize = domWidth/20 + 'px';
-  </script> -->
+</body>
+<script>
+    // rem 适配 
+
+    function setRem() {
+        let domWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        let domID = document.getElementsByTagName('html')[0];
+        domWidth = domWidth > 750 ? 750 : domWidth;
+        domID.style.fontSize = domWidth / 3.75 + 'px'; // 375宽为基准 1rem = 100px
+    }
+    setRem();
+    window.onresize = function () {
+        setRem()
+    }
+</script>
+
 </html>
