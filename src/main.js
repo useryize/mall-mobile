@@ -9,7 +9,7 @@ import Header from './components/pages/Header.vue';
 
 Vue.use(VueRouter).use(Button).use(Icon).use(Popup).use(Col).use(Row);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 const router = new VueRouter({
     routes: [
