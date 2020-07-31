@@ -3,11 +3,11 @@
 import Vue from 'vue'
 import App from './App';
 import VueRouter from 'vue-router';
-import { Button, Icon, Popup, Col, Row } from 'vant';
+import { Button, Icon, Popup, Col, Row, Field } from 'vant';
 import Header from './components/pages/Header.vue';
 // import './assets/flexible';
 
-Vue.use(VueRouter).use(Button).use(Icon).use(Popup).use(Col).use(Row);
+Vue.use(VueRouter).use(Button).use(Icon).use(Popup).use(Col).use(Field).use(Row);
 
 Vue.config.productionTip = false;
 

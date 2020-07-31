@@ -3,20 +3,34 @@
         <van-col span="4" class="flex">
             <van-icon name="location-o" color="#ffffff" size=".2rem" />
         </van-col>
-        <van-col span="16">span: 8</van-col>
-        <van-col span="4">span: 8</van-col>
+        <van-col class="flex" span="16">
+           <input type="input" class="input" v-model="text">
+        </van-col>
+        <van-col span="4" class="flex">
+            <van-button size="mini">查找</van-button>
+        </van-col>
     </van-row>
 </template>
 
 <script>
 import axios from "axios";
-axios.get();
 export default {
+    data(){
+        return{
+            text: '请输入值...'
+        }
+    },
     created() {
         axios
-            .get("https://www.easy-mock.com/mock/5f13ae1094896b22a7fa7636/example/index")
-            .then((response) => console.log(response))
-            .catch((error) => console.log(error));
+            .get(
+                "https://easy-mock.sucaidaohang.com/mock/5f241b2177b8d24c68cfbb3c/index/s"
+            )
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     },
 };
 </script>
@@ -31,5 +45,16 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.input {
+    border: none 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: #d14b1a solid 1px;
+    background-color: unset;
+    color: #ffffff !important;
+    height: 70%;
+    width: 100%;
+    display: block;
 }
 </style>
