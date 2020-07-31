@@ -1,3 +1,14 @@
 {
-    "data":1
+    "data": {
+        "bannerList": [
+            {
+                "url": "https://gw.alicdn.com/imgextra/i3/668334/O1CN01jZjuFL2BR1QRBacJ0_!!668334-0-lubanu.jpg_790x10000Q75.jpg_.webp",
+                "name": "banner1"
+            },
+            {
+                "url": "https://gw.alicdn.com/imgextra/i3/668334/O1CN01jZjuFL2BR1QRBacJ0_!!668334-0-lubanu.jpg_790x10000Q75.jpg_.webp",
+                "name": "banner1"
+            }
+        ]
+    }
 }

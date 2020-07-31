@@ -21,16 +21,16 @@ export default {
         }
     },
     created() {
-        axios
-            .get(
-                "../../../static/json.json"
-            )
-            .then(function (response) {
-                console.log(response);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+        // axios
+        //     .get(
+        //         "../../../static/json.json"
+        //     )
+        //     .then(function (response) {
+        //         console.log(response);
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error);
+        //     });
     },
 };
 </script>
