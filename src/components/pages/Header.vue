@@ -9,7 +9,16 @@
 </template>
 
 <script>
-export default {};
+import axios from "axios";
+axios.get();
+export default {
+    created() {
+        axios
+            .get("https://www.easy-mock.com/mock/5f13ae1094896b22a7fa7636/example/index")
+            .then((response) => console.log(response))
+            .catch((error) => console.log(error));
+    },
+};
 </script>
 
 <style scoped>
