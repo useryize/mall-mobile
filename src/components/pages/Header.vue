@@ -23,7 +23,7 @@ export default {
     created() {
         axios
             .get(
-                "https://easy-mock.sucaidaohang.com/mock/5f241b2177b8d24c68cfbb3c/index/s"
+                "../../../static/json.json"
             )
             .then(function (response) {
                 console.log(response);
