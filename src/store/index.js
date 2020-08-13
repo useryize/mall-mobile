@@ -1,6 +1,6 @@
 const state = {
     info: '',// diff
-    procInfo: ''
+    procInfo: '', // diff
 };
 
 export default {
