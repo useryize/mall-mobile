@@ -1,5 +1,5 @@
 const state = {
-    info: '',
+    info: '',// diff
     procInfo: ''
 };
 
